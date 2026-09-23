@@ -7,7 +7,10 @@ import random
 
 
 def main():
-    print(f"User score is: {get_score_status()}")
+    result = get_score_status()
+    print(f"User score is: {result}")
+    if result == "Excellent":
+        print("You win a prize!")
     print(get_random_score_status())
 
 
