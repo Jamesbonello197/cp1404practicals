@@ -3,17 +3,26 @@
 # Example: if the user enters Pythonista (10 characters), the program should print **********.
 
 """ """
-from win32con import HELP_SETPOPUP_POS
+
 
 MINIMUM_LENGTH = 8
 
-password = input("Enter your password: ")
-while len(password) < MINIMUM_LENGTH:
-    print(f"Password must be {MINIMUM_LENGTH} characters")
+
+def main():
+    password = get_valid_password()
+    print_stars(password)
+
+
+def print_stars(password: str):
+    print(len(password) * "*")
+
+
+def get_valid_password() -> str:
     password = input("Enter your password: ")
+    while len(password) < MINIMUM_LENGTH:
+        print(f"Password must be {MINIMUM_LENGTH} characters")
+        password = input("Enter your password: ")
+    return password
 
-print(len(password) * "*")
 
-
-
-
+main()
