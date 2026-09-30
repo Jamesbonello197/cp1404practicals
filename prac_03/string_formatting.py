@@ -55,5 +55,6 @@ for i, number in enumerate(numbers, 1):
 print(f"{year} {name} for about ${cost}!")  # This is the first task
 
 for exponent in range(10):
-    two_power_exponent = 2 ** exponent
-    print(f"2^{exponent} is {two_power_exponent: >4}")  # This is the second task
+    """ This code with print 2 to the exponents in range to 10 and right align it """
+    result = 2 ** exponent
+    print(f"2^{exponent} is {result: >4}")  # This is the second task
