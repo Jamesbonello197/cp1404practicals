@@ -9,6 +9,7 @@ https://docs.python.org/3/library/string.html#formatstrings
 name = "Gibson L-5 CES"
 year = 1922
 cost = 16035.9
+""""
 
 # The 'old' manual way to format text with string concatenation (don't do this):
 print("My guitar: " + name + ", first made in " + str(year))
@@ -48,3 +49,11 @@ for i, number in enumerate(numbers, 1):
 # 2 ^ 8 is  256
 # 2 ^ 9 is  512
 # 2 ^10 is 1024
+
+"""
+
+print(f"{year} {name} for about ${cost}!")  # This is the first task
+
+for exponent in range(10):
+    two_power_exponent = 2 ** exponent
+    print(f"2^{exponent} is {two_power_exponent: >4}")  # This is the second task
