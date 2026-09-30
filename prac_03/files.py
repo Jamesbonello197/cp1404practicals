@@ -26,7 +26,5 @@ number of numbers. Use with instead of open and close for this question.
 # 2
 in_file = open("name.txt")
 content = in_file.readline()
-print(content)
+print("Hi", content)
 in_file.close()
-
-
