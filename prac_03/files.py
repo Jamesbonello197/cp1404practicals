@@ -18,8 +18,15 @@ Now write a fourth block of code that prints the total for all lines in numbers.
 number of numbers. Use with instead of open and close for this question.
 """
 # 1
-name = input("Enter Your name >")
-out_file = open("name.txt", "w")
-print(name, file=out_file)
-out_file.close()
+# name = input("Enter Your name >")
+# out_file = open("name.txt", "w")
+# print(name, file=out_file)
+# out_file.close()
+
+# 2
+in_file = open("name.txt")
+content = in_file.readline()
+print(content)
+in_file.close()
+
 
