@@ -35,4 +35,10 @@ number of numbers. Use with instead of open and close for this question.
 #     second_number = int(in_file.readline())
 #     print(first_number + second_number)
 
+# 4
+# num = 0
+# with open("numbers.txt", "r") as in_file:
+#     for line in in_file:
+#         num += int(line)
+# print(num)
 
