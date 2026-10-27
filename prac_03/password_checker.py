@@ -2,10 +2,9 @@
 CP1404/CP5632 - Practical
 Password checker "skeleton" code to help you get started
 """
-from astroid.nodes import Return
 
-MIN_LENGTH = 2
-MAX_LENGTH = 6
+MIN_LENGTH = 8
+MAX_LENGTH = 15
 IS_SPECIAL_CHARACTER_REQUIRED = True
 SPECIAL_CHARACTERS = "!@#$%^&*()_-=+`~,./'[]<>?{}|\\"
 
@@ -57,5 +56,6 @@ def is_valid_password(password):
         return False
     # if we get here (without returning False), then the password must be valid
     return True
+
 
 main()
